@@ -9,6 +9,34 @@ html(ng-app='main')
     script(src='/javascripts/modernizr-2.6.2.js')
     base(href='/')
   body
-    block body
+      .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') #{title}
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li
+              a(href='/contact') Contact
+    .container.body-content
+      block content
+      hr
+      footer
+        p &copy; #{year} - My Express Application
 
+    block scripts
+    script(src='/javascripts/jquery-1.10.2.js')
+    script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/respond.js')
+    script(src='/javascripts/angular.min.js')
+    script(src='/javascripts/angular-route.js')
+    script(src='/javascripts/app/app.js')
+    script(src='/javascripts/app/contact.js')
  
