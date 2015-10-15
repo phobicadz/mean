@@ -1,0 +1,22 @@
+﻿extends layout
+
+block body
+ div
+    h2 Customer Support
+    ul
+      li
+        a(href='/home') Home
+      li
+        a(href='/contact') View Contacts
+      li
+        a(href='/about') About
+
+    div(ng-view)
+
+    script(src='/javascripts/jquery-1.10.2.js')
+    script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/respond.js')
+    script(src='/javascripts/angular.min.js')
+    script(src='/javascripts/angular-route.js')
+    script(src='/javascripts/app.js')
+    script(src='/javascripts/contact.js')
