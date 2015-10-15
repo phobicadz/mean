@@ -29,6 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 // routes (still required if using angular)
+// better method would be to pass page in as parameter to avoid defining so many routes
 app.get('/', routes.index);
 app.get('/contact', routes.contact);
 app.get('/about', routes.about);
