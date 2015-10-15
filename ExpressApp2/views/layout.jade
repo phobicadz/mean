@@ -1,15 +1,17 @@
 ﻿doctype html
 html(ng-app='main')
   head
+    base(href='/')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title #{title} - My Express Application
     link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
     script(src='/javascripts/modernizr-2.6.2.js')
-    base(href='/')
+    script(src='/javascripts/jquery-1.10.2.js')
+    script(src='/javascripts/bootstrap.js')
   body
-      .navbar.navbar-inverse.navbar-fixed-top
+    .navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -20,7 +22,7 @@ html(ng-app='main')
         .navbar-collapse.collapse
           ul.nav.navbar-nav
             li
-              a(href='/') Home
+              a(href='/home') Home
             li
               a(href='/about') About
             li
@@ -31,12 +33,11 @@ html(ng-app='main')
       footer
         p &copy; #{year} - My Express Application
 
-    block scripts
-    script(src='/javascripts/jquery-1.10.2.js')
-    script(src='/javascripts/bootstrap.js')
     script(src='/javascripts/respond.js')
     script(src='/javascripts/angular.min.js')
     script(src='/javascripts/angular-route.js')
     script(src='/javascripts/app/app.js')
     script(src='/javascripts/app/contact.js')
+
+    block scripts
  
