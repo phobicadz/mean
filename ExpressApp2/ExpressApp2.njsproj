@@ -35,6 +35,10 @@
     <Content Include="public\javascripts\app.js" />
     <Content Include="public\javascripts\angular-route.js" />
     <Content Include="public\javascripts\contact.js" />
+    <Content Include="public\javascripts\app\contact.js" />
+    <Content Include="public\javascripts\app\app.js" />
+    <Content Include="public\javascripts\angular-ui.min.js" />
+    <Content Include="public\javascripts\angular-animate-min.js" />
     <Compile Include="routes\index.js" />
   </ItemGroup>
   <ItemGroup>

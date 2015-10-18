@@ -9,8 +9,8 @@ html(ng-app='main')
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
     script(src='/javascripts/modernizr-2.6.2.js')
     script(src='/javascripts/jquery-1.10.2.js')
-    script(src='/javascripts/bootstrap.js')
-  body
+    script(src='/javascripts/bootstrap.min.js')
+  body(class="nav, pagination, carousel, panel-title")
     .navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
@@ -36,6 +36,8 @@ html(ng-app='main')
     script(src='/javascripts/respond.js')
     script(src='/javascripts/angular.min.js')
     script(src='/javascripts/angular-route.js')
+    script(src='/javascripts/angular-ui.min.js')
+    script(src='/javascripts/angular-animate-min.js')
     script(src='/javascripts/app/app.js')
     script(src='/javascripts/app/contact.js')
 
