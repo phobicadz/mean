@@ -1,5 +1,5 @@
 ﻿// declare an angular module for this page with angular winjs module included
-var angularApp = angular.module('main', ['ngRoute']);
+var angularApp = angular.module('main', ['ngRoute','ui.bootstrap','ngAnimate']);
 
 angularApp
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
