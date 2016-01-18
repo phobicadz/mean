@@ -1,5 +1,5 @@
 ﻿// declare an angular module for this page with angular winjs module included
-var angularApp = angular.module('main', ['ngRoute','ui.bootstrap','ngAnimate']);
+var angularApp = angular.module('main', ['ngRoute','ui.bootstrap','ngAnimate','ngResource']);
 
 angularApp
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
@@ -11,4 +11,8 @@ angularApp
             .when('/home', { templateUrl: 'home', controller: 'contactViewController' })
             .otherwise({ redirectTo: '/' });
         $locationProvider.html5Mode(true);
-    }])
+    }]);
+
+    angularApp.factory("colourLeds", function ($resource) {
+        return $resource("http://192.168.0.11:3000/api/colour/:hex");
+    });
